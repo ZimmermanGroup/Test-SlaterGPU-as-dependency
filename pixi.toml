@@ -8,4 +8,7 @@ preview = ["pixi-build"]
 [tasks]
 
 [dependencies]
-SlaterGPU = { git = "https://github.com/ZimmermanGroup/SlaterGPU.git" }
+# Gives error "parse invalid redefinition of function"
+# SlaterGPU = { git = "https://github.com/ZimmermanGroup/SlaterGPU.git", branch = "zsgpu" }
+
+SlaterGPU = { path = "../SlaterGPU" }
